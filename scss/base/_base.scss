@@ -1,0 +1,68 @@
+@font-face{
+    font-family:'Montserrat';
+    src: url("/font/static/Montserrat-Black.ttf") format("truetype");
+    src: url("/font/static/Montserrat-BlackItalic.ttf")format("truetype");
+    src: url("/font/static/Montserrat-Bold.ttf")format("truetype");
+    src: url("/font/static/Montserrat-BoldItalic.ttf")format("truetype");
+    src: url("/font/static/Montserrat-ExtraBold.ttf")format("truetype");
+    src: url("/font/static/Montserrat-ExtraBoldItalic.ttf")format("truetype");
+    src: url("/font/static/Montserrat-ExtraLight.ttf")format("truetype");
+    src: url("/font/static/Montserrat-ExtraLightItalic.ttf")format("truetype");
+    src: url("/font/static/Montserrat-Italic.ttf")format("truetype");
+    src: url("/font/static/Montserrat-Light.ttf")format("truetype");
+    src: url("/font/static/Montserrat-LightItalic.ttf")format("truetype");
+    src: url("./font/static/Montserrat-Medium.ttf")format("truetype");
+    src: url("/font/static/Montserrat-MediumItalic.ttf")format("truetype");
+    src: url("/font/static/Montserrat-Regular.ttf")format("truetype");
+    src: url("/font/static/Montserrat-SemiBold.ttf")format("truetype");
+    src: url("/font/static/Montserrat-SemiBoldItalic.ttf")format("truetype");
+    src: url("/font/static/Montserrat-Thin.ttf");
+    src: url("/font/static/Montserrat-ThinItalic.ttf")format("truetype");
+    src: url("/font/Montserrat-Italic-VariableFont_wght.ttf")format("truetype");
+    src: url("/font/Montserrat-VariableFont_wght.ttf")format("truetype");
+   
+    }
+$Montserrat:'Montserrat';
+h1{
+font-size: 18px;
+font-weight: 700;
+    @media(min-width:638px){
+        font-size: 24px;
+    }    
+        @media(min-width:1100px){
+            font-size: 36px;
+        }
+
+}   
+body{
+    font-family: $Montserrat;
+    background-color: $white;
+    font-size: 12px;
+    font-weight: 400;
+    color: $common;
+    margin: 0;
+    @media(min-width:1100px){
+         font-size: 14px;   
+        }
+}
+a{
+color:$emphasis;
+&:is(:hover,:focus){
+    color: $interactive;
+    text-decoration:underline;
+}
+}
+button{
+background-color: $emphasis;
+font-weight: 700;
+color: $white;
+border: 0;
+border-radius: 5px;
+&:is(:hover,:focus){
+background-color: $interactive;
+cursor: pointer;
+}
+}   
+.emphasis{
+    color: $emphasis;
+}
